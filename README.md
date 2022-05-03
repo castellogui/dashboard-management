@@ -41,18 +41,18 @@ finais do projeto pronto para produção.
 #### Inputs
 Os inputs são completamente simples, sem nenhum tipo de implementações além das validações dos campos ao fazer o submit do formulário com o próprio required do HTML.
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ![required-campos](https://user-images.githubusercontent.com/78494604/166316637-3cffdc07-e484-4068-887e-2510a5b7fb56.gif)
+![required-campos](https://user-images.githubusercontent.com/78494604/166316637-3cffdc07-e484-4068-887e-2510a5b7fb56.gif)
 
 Para fugir do hábito de nomear cada campo do formulário (mesmo com apenas duas opções de texto) e, ao mesmo tempo utilizar um placeholder (que incusive, eu gosto muito), fiz uma animação onde ao input receber o focus, o placeholder sobe e se torna o titulo do input. Um recurso muito simples mas que de forma simples, deixa o formulário mais limpo e dinâmico.
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ![exemplo-placeholder](https://user-images.githubusercontent.com/78494604/166318652-ecfde72f-0602-485f-8ce9-e1948580d6e2.gif)
+![exemplo-placeholder](https://user-images.githubusercontent.com/78494604/166318652-ecfde72f-0602-485f-8ce9-e1948580d6e2.gif)
 
 
 #### WebStorage/Lembrar-me
 
 A checkbox de lembrar-me está inserida logo após os inputs. Essa implementação permite ao usuário não ter que logar novamente ao entrar na plataforma, utilizando tokens que serão usados também para a verificação de permissões dos tipos de usuário e também para validar o tempo logado de cada usuário.
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](https://user-images.githubusercontent.com/78494604/166325129-6cf29c83-207a-448f-8a5c-659a522636d0.png)
+![image](https://user-images.githubusercontent.com/78494604/166325129-6cf29c83-207a-448f-8a5c-659a522636d0.png)
 
 Por enquanto, como ainda não implementei nenhum banco de dados, nem servidor para o projeto, todos os dados serão gerados ao iniciar na aplicação para testes, e serão guardados como coockies pela plataforma.
 
@@ -72,11 +72,11 @@ Basicamente criei os formatos de onda aleatóriamente através de um [gerador de
 
 #### Erro/Login
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](https://user-images.githubusercontent.com/78494604/166396173-45eb7d18-c581-4041-9b92-69625ec8edd9.png)
+![image](https://user-images.githubusercontent.com/78494604/166396173-45eb7d18-c581-4041-9b92-69625ec8edd9.png)
 
 Digitando uma combinação incorreta de usuário e senha, a interface nos informa numa mensagem abaixo da senha que a combinação não foi aprovada. Neste momento, a validação está sendo feita no front-end através do Javascript, e será a primeira implementação de validação ao inserir um banco de dados e servidor.
 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![removendo-mensagem](https://user-images.githubusercontent.com/78494604/166399863-d1db30a3-fb38-466f-ae43-9757c685afdb.gif)
+![removendo-mensagem](https://user-images.githubusercontent.com/78494604/166399863-d1db30a3-fb38-466f-ae43-9757c685afdb.gif)
 
 Ao clicar novamente nas input boxes, a mensagem é removida para uma nova tentativa.
