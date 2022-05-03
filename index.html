@@ -61,11 +61,11 @@
                         </div>
                         <form action="pages/dashboard.html" onsubmit="return validarUsuario(this)" id="form" class="signin-form">
                             <div class="form-group mt-3">
-                                <input id="user-field" type="text" class="form-control" required>
+                                <input onfocus="retirarMensagem()" id="user-field" type="text" class="form-control" required>
                                 <label class="form-control-placeholder" for="username">Usuário</label>
                             </div>
                             <div class="form-group">
-                                <input id="password-field" type="password" class="form-control" required>
+                                <input onfocus="retirarMensagem()" id="password-field" type="password" class="form-control" required>
                                 <label class="form-control-placeholder" for="password">Senha</label>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
@@ -97,7 +97,7 @@
     </header>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

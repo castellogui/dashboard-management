@@ -33,6 +33,10 @@ const exibirMensagem = () => {
 
 }
 
+const retirarMensagem = () => { 
+    document.getElementById('error-message').style = 'display: none;'
+}
+
 
 const criarUsuarioTest = () => {
     let user = { user: 'guilhermecastello', password: '123' }
