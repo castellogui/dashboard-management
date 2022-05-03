@@ -292,7 +292,23 @@ tr td:last-child {
     background: orangered;
 }
 
-.table-responsive {
+.status.red {
+    background: red;
+}
+
+.status.green {
+    background: green;
+}
+
+.status.blue {
+    background: blue;
+}
+
+.status.yellow {
+    background: yellow;
+}
+
+#table-responsive {
     width: 100%;
     overflow-x: auto;
 }
