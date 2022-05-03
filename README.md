@@ -23,6 +23,7 @@ para demonstração do que o Dashboard Management será em suas próximas atuali
    - [WebStorage / Lembrar-me](#webstoragelembrar-me)
    - [Contas / Senhas](#contassenhas)
    - [Animação/SVG](#animaçãosvg)
+   - [Erro ao Logar](#errologin)
 
 
 ### 🗝Login
@@ -66,8 +67,16 @@ Já o formulário paracriação de senhas, terá integração com as APIs do Goo
 
 Bom, o primeiro elemento a se notar ao entrar na página é a animação de ondas que se encontra na parte debaixo do login. O conceito aqui foi o seguinte: eu queria poder dar o sentimento de leveza, e flow que as ondas tem para a experiência do usuário. O objetivo deste layout foi trazer o ideal de que mesmo com uma plataforma com muitos dados e números, a experiência não deve ser afetada e se tornar mais pesada por isso. Essa animação foi um novo desafio para mim pois eu nunca havia trabalhado com SVG anteriormente.
 
-Basicamente criei os formatos de onda aleatóriamente através de um [gerador de ondas svg](getwaves.io), e depois fiz a animação horizontal dos elementos através da tag 
-`animation`, utilizando `@keyframes` e passando as coordenadas de inicio e fim na tag `transform: translateX()`. A velocidade e a distância variada de cada onda, causa o efeito de Paralax, o que nos trás a sensação de profundidade e suavidade na animação.
+Basicamente criei os formatos de onda aleatóriamente através de um [gerador de ondas svg](https://getwaves.io), e depois fiz a animação horizontal dos elementos através da tag `animation`, utilizando `@keyframes` e passando as coordenadas de inicio e fim na tag `transform: translateX()`. A velocidade e a distância variada de cada onda, causa o efeito de Paralax, o que nos trás a sensação de profundidade e suavidade na animação.
 
 
+#### Erro/Login
 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](https://user-images.githubusercontent.com/78494604/166396173-45eb7d18-c581-4041-9b92-69625ec8edd9.png)
+
+Digitando uma combinação incorreta de usuário e senha, a interface nos informa numa mensagem abaixo da senha que a combinação não foi aprovada. Neste momento, a validação está sendo feita no front-end através do Javascript, e será a primeira implementação de validação ao inserir um banco de dados e servidor.
+
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![removendo-mensagem](https://user-images.githubusercontent.com/78494604/166399863-d1db30a3-fb38-466f-ae43-9757c685afdb.gif)
+
+Ao clicar novamente nas input boxes, a mensagem é removida para uma nova tentativa.
