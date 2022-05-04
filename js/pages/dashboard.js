@@ -4,6 +4,37 @@ $(function () {
     });
 });
 
+const carregarUsuarioLogado = () => {
+    let user = buscarDadosUsuarioLogado();
+    let userWrapper = document.getElementById('usuario-info');
+
+    let img = document.createElement('img');
+    img.height = 40;
+    img.width = 40;
+    img.src = user.url == '' ? '/images/nophoto.jpg' : user.url;
+    userWrapper.appendChild(img);
+
+    let div = document.createElement('div');
+    userWrapper.appendChild(div);
+
+    let h4 = document.createElement('h4');
+    let espaco = " ";
+    h4.innerHTML = user.nome + espaco + user.sobrenome;
+    div.appendChild(h4);
+
+    let small = document.createElement('small');
+    small.innerHTML = user.cargo;
+    div.appendChild(small);
+
+    let a = document.createElement('a');
+    a.setAttribute('href', "/index.html");
+    div.appendChild(a);
+
+    let smallSair = document.createElement('small');
+    smallSair.innerText = 'Sair'
+    a.appendChild(smallSair);
+}
+
 const carregarContadores = () => {
     let contadores = buscarContadorFuncoes();
     let i = 0;
@@ -135,18 +166,23 @@ const definirTipo = (tipo) => {
 }
 
 const buscarServicos = () => {
-    let servicos = JSON.parse(localStorage.servicos)
+    let servicos = JSON.parse(localStorage.getItem('servicos'))
     return servicos;
 }
 
 const buscarFuncionarios = () => {
-    let funcionarios = JSON.parse(localStorage.funcionarios);
+    let funcionarios = JSON.parse(localStorage.getItem('funcionarios'));
     return funcionarios;
 }
 
 const buscarContadorFuncoes = () => {
-    let contadorFuncoes = JSON.parse(localStorage.contadorFuncoes);
+    let contadorFuncoes = JSON.parse(localStorage.getItem('contadorFuncoes'));
     return contadorFuncoes;
+}
+
+const buscarDadosUsuarioLogado = () => {
+    let user = JSON.parse(sessionStorage.getItem('usuarioLogado'))
+    return user;
 }
 
 const criarContadorFuncoes = () => {
@@ -179,10 +215,10 @@ const criarServicosTest = () => {
 }
 
 
-
 carregarFuncionarios();
 carregarServicos();
 carregarContadores();
+carregarUsuarioLogado();
 
 criarFuncionariosTest();
 criarServicosTest();
