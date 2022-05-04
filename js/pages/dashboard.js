@@ -215,11 +215,12 @@ const criarServicosTest = () => {
 }
 
 
+criarFuncionariosTest();
+criarServicosTest();
+criarContadorFuncoes();
+
 carregarFuncionarios();
 carregarServicos();
 carregarContadores();
 carregarUsuarioLogado();
 
-criarFuncionariosTest();
-criarServicosTest();
-criarContadorFuncoes();
