@@ -248,6 +248,11 @@ main {
     border: 1px solid var(--main-color);
 }
 
+.card-header button:hover {
+    background: #6959CD;
+    border-color: #6959CD;
+}
+
 table {
     border-collapse: collapse;
 }
