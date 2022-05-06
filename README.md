@@ -26,8 +26,13 @@ para demonstração do que o Dashboard Management será em suas próximas atuali
    - [Contas / Senhas](#contassenhas)
    - [Animação/SVG](#animaçãosvg)
    - [Erro ao Logar](#errologin)
+   - [Responsividade do Login](#responsividade)
 
 2. [Dashboard](#dashboard)
+   - [Sidebar](#sidebar)
+   - [Cards](#cards)
+   - [Responsividade da Dashboard](#responsividade-dashboard)
+   - [Personalização dos Elementos do Dashboard](#personalização)
 
 
 ### 🗝Login
@@ -86,7 +91,37 @@ Digitando uma combinação incorreta de usuário e senha, a interface nos inform
 Ao clicar novamente nas input boxes, a mensagem é removida para uma nova tentativa.
 
 
+#### Responsividade
+
+![responsividade-login](https://user-images.githubusercontent.com/78494604/167220486-49228eef-278b-431b-8489-9fb4c78464fe.gif)
+
+
+A plataforma foi pensada para que pudesse ser usada em dispositivos web em desktops, mas também em dispositivos mobile, por isso trabalhei a responsividade na página de login. Os layouts se encaixam perfeitamente com qualquer tamanho de tela, dentro dos padrões dos mobile. A responsividade estará mais presente na interface principal do dashboard, onde existirão mais elementos para se trabalhar.
+
+
 ### Dashboard
 
 ![image](https://user-images.githubusercontent.com/78494604/167056754-ff8f51c9-456f-40cc-83e4-d23a2db4274f.png)
 
+O dashboard é a página principal do usuário. É nele em que o usuário vai se deparar após fazer o login. Esta interface tem um potencial de evolução muito grande, falarei mais detalhadamente sobre isso nos próximos tópicos.
+Escolhi interir inicialmente apenas 3 elementros como exemplo de trabalhos com cards, listas e tabelas. **Todos** os elementos da página são gerados dinâmicamente de acordo com o banco de dados (atualmente utilizando webstorage), e atualizados em tempo real. É daqui que o usuário partirá para executar qualquer tipo de função.
+
+Procurei deixar a interface simples, e de fácil entendimento para que o usuário não se perca em nenhuma rotina. A side-bar ajuda a poupar espaço em ambientes com uma tela disponivel menor.
+
+#### Cards
+
+
+
+
+#### Sidebar
+
+![sidebar](https://user-images.githubusercontent.com/78494604/167220936-d97b6fd9-60e5-4285-b5be-95164b7f6174.gif)
+
+#### Responsividade-Dashboard
+
+
+#### Personalização
+
+Os elementos na tela do dashboard são na maioria das vezes, a porta de entrada para as funções de maneira isolada. No dashboard encontramos os resultados do que podemos organizar dentro das funções. E cada usuário utilizará o sistema de uma forma, pensando nisso, a próxima implementação será a aba: configurações. Nela ficarão todas as configurações globais da plataforma, incluindo a personalização dos elementos do dashboard. 
+
+Será possível habilitar a personalização automatica, onde a própria plataforma escolherá as funções a aparecer de acordo com a utilização do usuário, ou personalização fixa, onde o usuário poderá escolher os elementos que aparecerão no dashboard.
