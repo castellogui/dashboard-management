@@ -27,6 +27,8 @@ para demonstração do que o Dashboard Management será em suas próximas atuali
    - [Animação/SVG](#animaçãosvg)
    - [Erro ao Logar](#errologin)
 
+2. [Dashboard](#dashboard)
+
 
 ### 🗝Login
 Para todo o sistema, a cor escolhida foi o roxo escuro. É uma cor fria que cai bem para o layout clean e aconchegante que o minimalismo da tela de login procura trazer.
@@ -82,3 +84,9 @@ Digitando uma combinação incorreta de usuário e senha, a interface nos inform
 ![removendo-mensagem](https://user-images.githubusercontent.com/78494604/166399863-d1db30a3-fb38-466f-ae43-9757c685afdb.gif)
 
 Ao clicar novamente nas input boxes, a mensagem é removida para uma nova tentativa.
+
+
+### Dashboard
+
+![image](https://user-images.githubusercontent.com/78494604/167056754-ff8f51c9-456f-40cc-83e4-d23a2db4274f.png)
+
