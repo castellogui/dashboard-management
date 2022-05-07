@@ -34,8 +34,11 @@ para demonstração do que o Dashboard Management será em suas próximas atuali
    - [Responsividade da Dashboard](#responsividade-dashboard)
    - [Personalização dos Elementos do Dashboard](#personalização)
 
+3. [Próximas Atualizações](#atualizações)
+   - [Tópicos](#tópicos)
 
-### 🗝Login
+
+## 🗝Login
 Para todo o sistema, a cor escolhida foi o roxo escuro. É uma cor fria que cai bem para o layout clean e aconchegante que o minimalismo da tela de login procura trazer.
 
 ![ondascortado](https://user-images.githubusercontent.com/78494604/166313745-c712ab36-b0a0-4de0-945d-984e3c89b5ec.gif)
@@ -99,7 +102,7 @@ Ao clicar novamente nas input boxes, a mensagem é removida para uma nova tentat
 A plataforma foi pensada para que pudesse ser usada em dispositivos web em desktops, mas também em dispositivos mobile, por isso trabalhei a responsividade na página de login. Os layouts se encaixam perfeitamente com qualquer tamanho de tela, dentro dos padrões dos mobile. A responsividade estará mais presente na interface principal do dashboard, onde existirão mais elementos para se trabalhar.
 
 
-### Dashboard
+## 📒Dashboard
 
 ![image](https://user-images.githubusercontent.com/78494604/167056754-ff8f51c9-456f-40cc-83e4-d23a2db4274f.png)
 
@@ -108,20 +111,42 @@ Escolhi interir inicialmente apenas 3 elementros como exemplo de trabalhos com c
 
 Procurei deixar a interface simples, e de fácil entendimento para que o usuário não se perca em nenhuma rotina. A side-bar ajuda a poupar espaço em ambientes com uma tela disponivel menor.
 
-#### Cards
-
-
-
 
 #### Sidebar
 
 ![sidebar](https://user-images.githubusercontent.com/78494604/167220936-d97b6fd9-60e5-4285-b5be-95164b7f6174.gif)
 
+A sidebar é o elemento de destaque da página. É por ela que o usuário se locomove através das funções. Ela se adapta ao tamanho da página, funcionando muito bem em dispositivos mobile, onde o espaço é escasso.
+
+#### Cards
+
+![mandar 1](https://user-images.githubusercontent.com/78494604/167232394-207cd358-b6ef-4a73-9ad5-7932232e1f96.gif)
+
+
+Os cards são o portão de entrada às funções, além da Sidebar. Nesses elementos, que além de botões que redirecionam para as respectivas ferramentas, exibem informações contadoras sobre a quantidade de reuniões, entregas e etc do condomínio. As animações são sutis para que o aspecto clean da página permaneça. Os cards modificam sua forma e ordem de acordo com o tamanho da página, função que é essencial para que o usuário consiga o utilizar a plataforma em qualquer tamanho de tela.
+
+
 #### Responsividade-Dashboard
 
+![manda2](https://user-images.githubusercontent.com/78494604/167232187-9b59672b-49e1-4da4-be83-0ebe0229d3ba.gif)
+
+A responsividade no dashboard era talvez um dos pontos mais importantes para a boa experiência do usuário. Como este sistema foi idealizado para também ser executado em dispositivos mobile, quando a página diminuisse, os elementos teriam que se ajustar à página naturalmente. Desta forma a interface continua sendo intuitiva e usual. Influênciando no SEO da aplicação, diminuindo a taxa de rejeição do aplicativo e com compatibilidade total a novos dispositivos (incluindo os dobráveis).
 
 #### Personalização
 
 Os elementos na tela do dashboard são na maioria das vezes, a porta de entrada para as funções de maneira isolada. No dashboard encontramos os resultados do que podemos organizar dentro das funções. E cada usuário utilizará o sistema de uma forma, pensando nisso, a próxima implementação será a aba: configurações. Nela ficarão todas as configurações globais da plataforma, incluindo a personalização dos elementos do dashboard. 
 
 Será possível habilitar a personalização automatica, onde a própria plataforma escolherá as funções a aparecer de acordo com a utilização do usuário, ou personalização fixa, onde o usuário poderá escolher os elementos que aparecerão no dashboard.
+
+
+### Atualizações
+
+As próximas atualizações do projeto contarão com as páginas completas de dashboard, incluindo todas as funções já presentes, bem como a apresentação dos elementos de funcionários e seus modais. Também pretendo implementar APIs da Google, para melhorar a experiência do usuário na ferramente de Serviços e Produtos.
+
+Será implementado também uma nova função para controle de acesso aos condomínios, onde cada usuário do Dashboard-Management poderá utilizar um QR para entrar no condomínio através da plataforma.
+
+#### Tópicos
+- Controle de acesso.
+- Elemento funcionarios e seus modais.
+- Tabela e filtros.
+- Páginas completas de função da sidebar.
