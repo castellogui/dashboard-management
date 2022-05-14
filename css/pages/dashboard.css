@@ -192,6 +192,12 @@ main {
     border-radius: 2px;
 }
 
+.card-single a:visited,
+.card-single a:hover,
+.card-single a:active {
+    color: var(--main-color);
+}
+
 .card-single:hover {
     transform: scale(1.05);
     transition: transform 250ms;
@@ -211,7 +217,10 @@ main {
 }
 
 .card-single:last-child h1,
-.card-single:last-child div span {
+.card-single:last-child div span,
+.card-single:last-child a:visited,
+.card-single:last-child a:hover,
+.card-single:last-child a:active {
     color: #fff;
 }
 
