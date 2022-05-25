@@ -23,11 +23,11 @@
         <div class="sidebar-menu">
             <ul>
                 <li>
-                    <a href="/pages/dashboard.html" class="active"><i class="las la-home"></i>
+                    <a href="/pages/dashboard.html"><i class="las la-home"></i>
                         <span>Principal</span></a>
                 </li>
                 <li>
-                    <a href="/pages/reunioes.html"><i class="las la-users"></i>
+                    <a href="/pages/reuniao.html"><i class="las la-users"></i>
                         <span>Reuniões</span></a>
                 </li>
                 <li>
@@ -47,7 +47,7 @@
                         <span>Produtos e Serviços</span></a>
                 </li>
                 <li>
-                    <a href="/pages/equipe.html"><i class="las la-user-circle"></i>
+                    <a href="/pages/equipe.html" class="active"><i class="las la-user-circle"></i>
                         <span>Equipe do Condomínio</span></a>
                 </li>
                 <li>
@@ -73,70 +73,13 @@
             <div id="usuario-info" class="user-wrapper"></div>
         </header>
         <main>
-            <div class="cards">
-                <div class="card-single">
-                    <a href="/pages/reunioes.html" id="reunioes">
-                    </a>
-                    <div>
-                        <span class="las la-users"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <a href="/pages/documentos.html" id="documentos">
-                    </a>
-                    <div>
-                        <span class="las la-file-pdf"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <a href="/pages/listaConvidados.html" id="listaConvidados">
-                    </a>
-                    <div>
-                        <span class="las la-clipboard-list"></span>
-                    </div>
-                </div>
-                <div class="card-single">
-                    <a href="/pages/entregas.html" id="entregas">
-                    </a>
-                    <div>
-                        <span class="las la-truck"></span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="recent-grid">
-                <div class="projects">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Produtos e Serviços</h3>
-                            <a href="/pages/produtosServicos.html">
-                                <button>Todos <span class="las la-arrow-right"></span></button>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <div id="table-responsive"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="customers">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Equipe do Condomínio</h3>
-                            <a href="/pages/equipe.html">
-                                <button>Todos <span class="las la-arrow-right"></span></button>
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <ol id="funcionarios"></ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </main>
     </div>
 
     <script src="/js/jquery.min.js"></script>
     <script src="/js/pages/dashboard.js"></script>
+    <script src="/js/pages/equipe.js"></script>
 
 </body>
 
