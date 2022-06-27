@@ -2,7 +2,7 @@
 
 ![background](https://user-images.githubusercontent.com/78494604/166401181-39adf3ee-1ca7-4fb7-b010-4351dd8bb6e5.png)
 
-**Olá! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">**
+**Olá! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30" height="30">**
 
 O projeto Dashboard Management foi inicialmente idealizado para servir como treinamento para minhas habilidades em CSS, HTML e Javascript em suas formas nativas. Busquei
 inspirações em sistemas onde a utilização de dashboards é muito comum, como em ERPs ou softwares do ramo imobiliário, onde é muito útil se ter uma visão macro com 
